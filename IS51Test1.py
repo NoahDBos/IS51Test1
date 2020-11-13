@@ -13,3 +13,55 @@ it will tell the user "Option 1 and Option 2 pay the same"
 if Option 1 is more it will say "Option 1 is better"
 if Option 2 is more it will say "Option 2 is better"
 """
+
+"""
+# option 1
+return 100 * 10
+
+# option 2
+amount = 1
+list1 = []
+loop 10 times
+    add looped amount to list
+    amount *= 2
+return amount
+
+#main
+answer = ""
+var1 = option1() #1000
+var2 = option2() #1023
+if var1 == var2
+    "Option 1 and Option 2 pay the same"
+if var1 < var2  
+    "Option 2 is better"
+else 
+    "Option 1 is better"
+
+Main
+"""
+
+def option1():
+    return 100 * 10
+
+def option2():
+    amount = 1
+    list1 = []
+    for i in range(0, 10):
+        list1.append(amount)
+        amount *= 2
+    total = sum(list1)
+    return total
+
+def main():
+    answer = ""
+    var1 = option1()
+    var2 = option2()
+    if var1 == var2:
+        answer = "Option 1 and Option 2 pays the same"
+    if var1 < var2:
+        answer = "Option 2 is better"
+    else:
+        answer = "Option 1 is better"
+    print(answer)
+
+main()
